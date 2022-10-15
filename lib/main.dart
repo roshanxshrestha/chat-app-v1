@@ -11,16 +11,16 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: "message app ui",
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primaryColor: Colors.black87,
-        colorScheme: ColorScheme.fromSwatch().copyWith(
-          secondary: Colors.black54,
-        ),
-      ),
-      home: const HomeScreen(),
+      // theme: ThemeData(
+      //   primaryColor: Colors.black87,
+      //   colorScheme: ColorScheme.fromSwatch().copyWith(
+      //     secondary: Colors.black54,
+      //   ),
+      // ),
+      home: HomeScreen(),
     );
   }
 }

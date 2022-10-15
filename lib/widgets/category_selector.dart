@@ -1,3 +1,4 @@
+import 'package:chat_app_v1/app_constants.dart';
 import 'package:flutter/material.dart';
 
 class CategorySelector extends StatefulWidget {
@@ -15,7 +16,7 @@ class _CategorySelectorState extends State<CategorySelector> {
   Widget build(BuildContext context) {
     return Container(
       height: 90.0,
-      color: Theme.of(context).primaryColor,
+      color: primaryColor,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: categories.length,
@@ -32,9 +33,8 @@ class _CategorySelectorState extends State<CategorySelector> {
               child: Text(
                 categories[index],
                 style: TextStyle(
-                    color:
-                        index == selectedIndex ? Colors.white : Colors.white60,
-                    fontSize: 24.0,
+                    color: index == selectedIndex ? Colors.white : accent2Color,
+                    fontSize: 22.0,
                     fontWeight: FontWeight.bold,
                     letterSpacing: 1.2),
               ),
